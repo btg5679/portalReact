@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello.eot?81482965');
+  src: url('../fonts/fontello.eot?81482965#iefix') format('embedded-opentype'),
+       url('../fonts/fontello.woff2?81482965') format('woff2'),
+       url('../fonts/fontello.woff?81482965') format('woff'),
+       url('../fonts/fontello.ttf?81482965') format('truetype'),
+       url('../fonts/fontello.svg?81482965#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?81482965#fontello') format('svg');
+  }
+}
+*/
+ 
+ [class^="fontello-"]:before, [class*=" fontello-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.fontello-rotate:before { content: '\e801'; } /* 'î ' */
+.fontello-search:before { content: '\e802'; } /* 'î ‚' */
+.fontello-print:before { content: '\e803'; } /* 'î ƒ' */
+.fontello-logout:before { content: '\e804'; } /* 'î „' */
+.fontello-download:before { content: '\e805'; } /* 'î …' */
+.fontello-files:before { content: '\e806'; } /* 'î †' */
+.fontello-timeline:before { content: '\e807'; } /* 'î ‡' */
+.fontello-phone:before { content: '\e808'; } /* 'î ˆ' */
+.fontello-undo:before { content: '\e809'; } /* 'î ‰' */
+.fontello-chatbubble:before { content: '\e80a'; } /* 'î Š' */
+.fontello-file:before { content: '\e80b'; } /* 'î ‹' */
+.fontello-tag:before { content: '\e80c'; } /* 'î Œ' */
+.fontello-tags:before { content: '\e80d'; } /* 'î ' */
+.fontello-moneybills:before { content: '\e80e'; } /* 'î Ž' */
+.fontello-wallet:before { content: '\e80f'; } /* 'î ' */
+.fontello-creditcard:before { content: '\e810'; } /* 'î ' */
+.fontello-deposits:before { content: '\e812'; } /* 'î ’' */
+.fontello-movemoney:before { content: '\e813'; } /* 'î “' */
+.fontello-moneybillangled:before { content: '\e814'; } /* 'î ”' */
+.fontello-moreellipses:before { content: '\e815'; } /* 'î •' */
+.fontello-user:before { content: '\e816'; } /* 'î –' */
+.fontello-abacus:before { content: '\e817'; } /* 'î —' */
+.fontello-star:before { content: '\e818'; } /* 'î ˜' */
+.fontello-upload:before { content: '\e819'; } /* 'î ™' */
+.fontello-viewfiles:before { content: '\e81a'; } /* 'î š' */
+.fontello-userteam:before { content: '\e81b'; } /* 'î ›' */
+.fontello-gear:before { content: '\e81c'; } /* 'î œ' */
+.fontello-managecards:before { content: '\e81d'; } /* 'î ' */
+.fontello-paperplane:before { content: '\e81e'; } /* 'î ž' */
+.fontello-home:before { content: '\e81f'; } /* 'î Ÿ' */
+.fontello-view:before { content: '\e820'; } /* 'î  ' */
+.fontello-stats:before { content: '\e821'; } /* 'î ¡' */
+.fontello-email:before { content: '\e822'; } /* 'î ¢' */
+.fontello-helpfaq:before { content: '\e823'; } /* 'î £' */
+.fontello-accountdetails:before { content: '\e824'; } /* 'î ¤' */
+.fontello-viewstatements:before { content: '\e825'; } /* 'î ¥' */
+.fontello-managebeneficiaries:before { content: '\e826'; } /* 'î ¦' */
+.fontello-managecoowners:before { content: '\e827'; } /* 'î §' */
+.fontello-managecddisbursement:before { content: '\e828'; } /* 'î ¨' */
+.fontello-managecdrenewal:before { content: '\e829'; } /* 'î ©' */
+.fontello-add:before { content: '\e82a'; } /* 'î ª' */
+.fontello-medical:before { content: '\e82b'; } /* 'î «' */
+.fontello-taxrelated:before { content: '\e82c'; } /* 'î ¬' */
+.fontello-government:before { content: '\e82d'; } /* 'î ­' */
+.fontello-buisiness:before { content: '\e82e'; } /* 'î ®' */
+.fontello-delete:before { content: '\e82f'; } /* 'î ¯' */
+.fontello-chevronleft:before { content: '\e830'; } /* 'î °' */
+.fontello-chevronright:before { content: '\e831'; } /* 'î ±' */
+.fontello-chevrondown:before { content: '\e832'; } /* 'î ²' */
+.fontello-chevronup:before { content: '\e833'; } /* 'î ³' */
+.fontello-edit:before { content: '\e834'; } /* 'î ´' */
+.fontello-mobileswipeleft:before { content: '\e835'; } /* 'î µ' */
+.fontello-mobiletap:before { content: '\e836'; } /* 'î ¶' */
+.fontello-camera:before { content: '\e837'; } /* 'î ·' */
+.fontello-security:before { content: '\e83a'; } /* 'î º' */
+.fontello-tile:before { content: '\e83b'; } /* 'î »' */
+.fontello-list:before { content: '\e83c'; } /* 'î ¼' */
+.fontello-chainlink:before { content: '\e83d'; } /* 'î ½' */
+.fontello-infocircle:before { content: '\e83e'; } /* 'î ¾' */
+.fontello-infoletter:before { content: '\e83f'; } /* 'î ¿' */
+.fontello-errorbang:before { content: '\e840'; } /* 'î¡€' */
+.fontello-magnify:before { content: '\e841'; } /* 'î¡' */
+.fontello-checkflipthin:before { content: '\e843'; } /* 'î¡ƒ' */
+.fontello-linktransferaccount:before { content: '\e844'; } /* 'î¡„' */

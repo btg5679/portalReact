@@ -8,18 +8,11 @@ import Dashboard from './components/dashboard/Dashboard';
 import LatestBills from './components/bill/LatestBills';
 import DetailedBill from './components/bill/DetailedBill';
 
-import AccountList from './components/lobLeft/AccountList';
 
 import DetailedBillStore from './stores/DetailedBillStore';
 import LatestBillsStore from './stores/LatestBillsStore';
 
 import ComponentConnectorFactory from './components/common/ComponentConnectorFactory';
-
-const AccountListConnector = ComponentConnectorFactory.connect({
-    name: 'AccountListConnector',
-    component: AccountList,
-    store: DetailedBillStore
-});
 
 const DetailedBillConnector = ComponentConnectorFactory.connect({
     name: 'DetailedBillConnector',
@@ -35,7 +28,6 @@ const LatestsBillsConnector = ComponentConnectorFactory.connect({
 
 export default (
     <Route path="/" component={App}>
-        <Route component={AccountListConnector} />
         <Route component={Dashboard}>
             <IndexRoute component={LatestsBillsConnector}/>
             <Route path="bill/:id" component={DetailedBillConnector}/>

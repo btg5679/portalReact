@@ -2,6 +2,8 @@ import React from 'react';
 
 import Header from './main/Header';
 import LeftSidebar from './lobMainPanels/LeftSidebar';
+import RightSidebar from './lobMainPanels/RightSidebar';
+import CenterPanel from './lobMainPanels/CenterPanel';
 
 export default class App extends React.Component {
     static get childContextTypes() {
@@ -20,7 +22,13 @@ export default class App extends React.Component {
         return (
             <div>
                 <Header/>
-                <LeftSidebar/>
+                <div className="container">
+                    <div className="row mainPanelRow"> 
+                        <LeftSidebar/>
+                        <CenterPanel/>
+                        <RightSidebar/>
+                    </div>
+                </div>
             </div>
         );
     }

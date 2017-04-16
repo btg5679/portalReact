@@ -1937,7 +1937,8 @@ ul.accountType {
     display: -webkit-flex;
     display: flex;
     width: 100%;
-    align-content: space-around
+    align-content: space-around;
+    margin-left:0px;
 }
 ul.accountType li {
     flex: 1;
@@ -2056,7 +2057,6 @@ ul.accountsWrapper ul li {
     color: #7a7a7a
 }
 .accountHead span {
-    position: absolute;
     right: 0;
     top: 0
 }
@@ -8614,4 +8614,32 @@ screen and (min-width: 75em) {
 }
 .clearfix::after {
     clear: both
+}
+.leftSidebar {
+    padding: 15px;
+    order: 1;
+    flex: 1;
+    min-width: 315px;
+    max-width: 315px;
+}
+.mainContent {
+    padding: 15px;
+    order: 2;
+    flex: 2;
+}
+.rightSidebar {
+    padding: 15px;
+    padding-left: 0px !important;
+    order: 3;
+    flex: 1;
+    min-width: 315px;
+    max-width: 315px;
+    margin-left: 15px;
+}
+.mainPanelRow{
+    margin:0px;
+    height:900px;
+}
+.accountListLI{
+    list-style-type:none;
 }

@@ -4,6 +4,23 @@ import AppDispatcher from '../dispatcher/AppDispatcher';
 import Consts from './Consts';
 
 export class Actions {
+    // loadAccountList(params, domain = '') {
+    //     const url = `${domain}/api/account-summary`;
+    //     return axios.get(url);
+    // }
+
+    // getAccountList(params) {
+    //     this.loadAccountList(params).then((response) => {
+    //         AppDispatcher.dispatch({
+    //             type: Consts.LOAD_ACCOUNT_LIST, 
+    //             data: response.data
+    //         });
+    //     }).catch((err) => {
+    //         throw new Error(err);
+    //     });
+    // }
+
+
     loadDetailedBillData(params, domain = '') {
         const url = `${domain}/api/bill/${params.id}`;
         return axios.get(url);

@@ -1,17 +1,14 @@
-# Flux Universal Application
-
-> Other variants of the application, along with their short description are linked from
-> [master](https://github.com/zen-js-code/react-universal-web-apps/) branch.
+# Flux Universal Portal Demo
 
 ## Installation & Execution
 
-The application is installed using:
+Install app using:
 
 ```
 npm install
 ```
 
-and ran using:
+and run using:
 
 ```
 npm start
@@ -21,13 +18,16 @@ You can access the application's server directly under http://localhost:6001 or 
 
 ## Description
 
-This variant of the application, we are going to make a transformation from our naive Flux-less  application to still (hopefully less) naive Flux-full one.
+Portal demo using Node/Express/React/React-Router
 
-**Flux architecture, as it applies here:**
+Stack:
+* ES6 JS
+* Node/Express for web server
+* Handlebars for templating
+* Reac/React-Router for app f/e
+* Gulp/Webpack for packaging
+* Babel for transpiling
+* BrowserSync for live reload/development
+* ESLint
 
-![Flux Architecture](flux-architecture.png)
-
-**Schematically, it can be shown like this:**
-
-![Application Components](flux-app-structure.png)
 # portalReact

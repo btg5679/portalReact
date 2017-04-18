@@ -8643,3 +8643,14 @@ screen and (min-width: 75em) {
 .accountListLI{
     list-style-type:none;
 }
+aside .depositGrp .item{
+    position: relative;
+    cursor: pointer;
+    height: 60px;
+    border-top: solid 2px #3983c5;
+    background: rgba(57, 131, 197, 0.75);
+    width: 100%;
+    color: #fff;
+    z-index: 50;
+    font-weight: 400;
+}

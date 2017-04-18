@@ -84,8 +84,20 @@ const routeManager = Object.assign({}, baseManager, {
         const router = express.Router();
 
         this.createLastestBillsRoute(router);
-        this.createDetailedBillRoute(router);        
+        this.createDetailedBillRoute(router);  
+        this.createAccountSummaryRoute(router);          
         return router;
+    },
+    createAccountSummaryRoute(router) {
+        router.get('/api/account-summary', (req, res) => {
+            this.retrieveAccounts((err, data) => {
+                if(!err) {
+                    res.json(data);                                    
+                } else {
+                    res.status(500).send(err);
+                }
+            });
+        });
     },
     createLastestBillsRoute(router) {
         router.get('/latest-bills', (req, res) => {
@@ -114,6 +126,11 @@ const routeManager = Object.assign({}, baseManager, {
                     res.status(500).send(err);
                 }
             });
+        });
+    },
+    retrieveAccounts(callback) {
+        FS.readFile('./app/fixtures/account.json', 'utf-8', (err, content) => {
+            callback(err, JSON.parse(content));
         });
     },
     retrieveLatestBills(callback) {
